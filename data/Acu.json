@@ -12,7 +12,13 @@
             "user": "DD",
             "link": "https://www.youtube.com/watch?v=HqB3pl1XZOo",
             "percent": 100,
-            "hz": 240
+            "hz": 60
+        },
+        {
+            "user": "joeycd",
+            "link": "https://www.youtube.com/watch?v=CQeezCdF4mk",
+            "percent": 100,
+            "hz": 60
         }
     ]
 }
