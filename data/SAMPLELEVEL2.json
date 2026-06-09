@@ -4,9 +4,15 @@
     "author": "Teno",
     "creators": ["Teno", "KrMal", "minay", "arshadow & More"],
     "verifier": "nicor77",
-    "verification": "https://www.youtube.com/watch?v=ISTl28wKSXc",
+    "verification": "https://www.youtube.com/watch?v=vegDZr7jh-M",
     "percentToQualify": "100",
     "password": "Free To Copy",
     "records": [
+                {
+            "user": "DD",
+            "link": "https://www.youtube.com/watch?v=n98rEw_paG4",
+            "percent": 100,
+            "hz": 240
+        }
     ]
 }
