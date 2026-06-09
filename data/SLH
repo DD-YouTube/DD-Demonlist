@@ -1,1 +1,19 @@
+{
+    "id": 13850073,
+    "name": "SlaughterHouse",
+    "author": "Havok",
+    "creators": ["carapa", "Havok"],
+    "verifier": "maxis9",
+    "verification": "https://www.youtube.com/watch?v=Rnehbr3m__A",
+    "percentToQualify": "68",
+    "password": "46290",
+    "records": [
+        {
+            "user": "DD",
+            "link": "https://www.youtube.com/watch?v=CQeezCdF4mk",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
 
