@@ -1,0 +1,18 @@
+{
+    "id": 112133114,
+    "name": "Sonic Wave Universe",
+    "author": "HuyChoiGeoDat",
+    "creators": ["HuyChoiGeoDat", "phzt", "LamHaiDoiGD & More"],
+    "verifier": "Kanade",
+    "verification": "https://www.youtube.com/watch?v=iIvrn_diOcA",
+    "percentToQualify": "59",
+    "password": "46290",
+    "records": [
+        {
+            "user": "DD",
+            "link": "https://www.youtube.com/watch?v=CQeezCdF4mk",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
