@@ -1,0 +1,18 @@
+{
+    "id": 59315849,
+    "name": "Double Dash",
+    "author": "Zoroa",
+    "creators": [],
+    "verifier": "Zoroa",
+    "verification": "https://www.youtube.com/watch?v=3PMbAZkExVM",
+    "percentToQualify": "100",
+    "password": "46290",
+    "records": [
+        {
+            "user": "DD",
+            "link": "https://www.youtube.com/watch?v=CQeezCdF4mk",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
