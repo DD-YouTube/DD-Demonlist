@@ -1,0 +1,18 @@
+{
+    "id": 110790559,
+    "name": "ToE 3",
+    "author": "Masterthecube5",
+    "creators": [],
+    "verifier": "Masterthecube5",
+    "verification": "https://www.youtube.com/watch?v=m9BY8B1UYy8",
+    "percentToQualify": "100",
+    "password": "46290",
+    "records": [
+        {
+            "user": "DD",
+            "link": "https://www.youtube.com/watch?v=CQeezCdF4mk",
+            "percent": 100,
+            "hz": 60
+        }
+    ]
+}
