@@ -1,0 +1,18 @@
+{
+    "id": 62909889,
+    "name": "RGB",
+    "author": "Sillow",
+    "creators": [],
+    "verifier": "Sillow",
+    "verification": "https://www.youtube.com/watch?v=i79i4uc3GQs",
+    "percentToQualify": "100",
+    "password": "46290",
+    "records": [
+        {
+            "user": "DD",
+            "link": "https://www.youtube.com/watch?v=CQeezCdF4mk",
+            "percent": 100,
+            "hz": 60
+        }
+    ]
+}
