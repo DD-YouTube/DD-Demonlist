@@ -1,0 +1,18 @@
+{
+    "id": 7887341,
+    "name": "Grey Trap",
+    "author": "Clasi",
+    "creators": [],
+    "verifier": "Clasi",
+    "verification": "https://www.youtube.com/watch?v=TxKdOhlLvDI",
+    "percentToQualify": "100",
+    "password": "46290",
+    "records": [
+        {
+            "user": "DD",
+            "link": "https://www.youtube.com/watch?v=CQeezCdF4mk",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
