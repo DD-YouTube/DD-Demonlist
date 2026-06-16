@@ -1,6 +1,6 @@
 /* === PACKS-SEITE === */
 
-/* Grundlayout – nutzt deine globalen Variablen */
+/* Grundlayout – nutzt globale Variablen */
 .packs-page {
   display: flex;
   height: 100%;
@@ -16,7 +16,7 @@
   flex-direction: column;
   gap: 20px;
   background-color: var(--color-background);
-  border-right: 3px solid #ddd;
+  border-right: 3px solid var(--color-background-hover);
 }
 
 /* Pack-Buttons */
@@ -37,7 +37,7 @@
   transform: scale(1.03);
 }
 
-/* Aktiver Pack – nutzt deine Primary-Farbe (Light/Dark kommt aus main.dark) */
+/* Aktiver Pack */
 .pack-button.active {
   background-color: var(--color-primary);
   color: var(--color-on-primary);
@@ -50,7 +50,7 @@
   overflow-y: auto;
 }
 
-/* Pack-Titel oben zentriert */
+/* Pack-Titel */
 .pack-title {
   text-align: center;
   font-size: 3em;
@@ -65,7 +65,7 @@
   display: flex;
   align-items: center;
   padding: 12px 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--color-background-hover);
   cursor: pointer;
   transition: background-color 0.2s, transform 0.15s;
 }
@@ -77,6 +77,7 @@
   transform: translateX(6px);
 }
 
+/* Platzierung */
 .placement {
   font-size: 1.5em;
   font-weight: 900;
@@ -84,17 +85,8 @@
   color: var(--color-primary);
 }
 
-.level-info {
-  display: flex;
-  flex-direction: column;
-}
-
+/* Nur der Level-Name bleibt */
 .level-name {
   font-size: 1.4em;
   font-weight: 700;
-}
-
-.level-author {
-  font-size: 0.9em;
-  opacity: 0.7;
 }
