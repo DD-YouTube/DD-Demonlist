@@ -41,6 +41,13 @@
                 <h2>DDDL</h2>
                 <p>v1.0.3</p>
             </div>
+
+                </header>
+
+    <main :class="{ dark: store.dark }">
+        <router-view></router-view>
+    </main>
+</body>
             <nav class="nav">
                 <router-link class="nav__tab" to="/">
                     <span class="type-label-lg">List</span>
