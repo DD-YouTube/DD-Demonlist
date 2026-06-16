@@ -9,7 +9,7 @@
     --color-on-error: white;
 }
 
-main.dark,
+body.dark,
 header.dark {
     color-scheme: dark;
     --color-background: #1c1b1f;
