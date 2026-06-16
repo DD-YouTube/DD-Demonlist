@@ -1,48 +1,62 @@
 .packs-page {
-  font-family: 'Segoe UI', sans-serif;
-  padding: 20px;
+  display: flex;
+  height: 100%;
+  background-color: #1c1c1c;
+  color: #fff;
 }
 
-.pack {
-  border-top: 6px solid #800000;
-  margin-bottom: 20px;
-  padding-top: 10px;
+.packs-sidebar {
+  width: 220px;
+  background-color: #111;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pack-button {
+  background-color: #800000;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.pack-button:hover {
+  background-color: #a00000;
+}
+
+.pack-button.active {
+  background-color: #b30000;
+}
+
+.packs-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
 }
 
 .pack-title {
-  cursor: pointer;
-  font-size: 1.8em;
-  font-weight: 700;
-  margin: 0;
-  transition: color 0.2s;
+  font-size: 2.5em;
+  font-weight: 900;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #800000;
+  padding-bottom: 10px;
 }
 
-.pack-title:hover {
-  color: #b30000;
-}
-
-.level-list {
-  margin-top: 10px;
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.level-list li {
-  font-size: 1em;
-  margin-bottom: 4px;
-}
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.3s;
-}
-.fade-enter, .fade-leave-to {
-  opacity: 0;
-}
 .list-item {
   display: flex;
   align-items: center;
   padding: 10px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+}
+
+.list-item:hover {
+  background-color: #222;
 }
 
 .placement {
@@ -64,5 +78,5 @@
 
 .level-author {
   font-size: 0.9em;
-  color: #555;
+  color: #aaa;
 }
