@@ -3,5 +3,10 @@
         "name": "Starter Pack",
         "description": "Ein einfaches Pack für neue Spieler.",
         "levels": ["Bloodbath", "niwa", "amethyst"]
+    },
+    {
+        "name": "Tidal Wave test",
+        "description": "Ein einfaches Pack für neue Spieler.",
+        "levels": ["CraZy", "WindyLandscape", "Mehdi"]
     }
 ]
