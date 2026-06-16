@@ -2,7 +2,7 @@
     {
         "name": "Starter Pack",
         "description": "Ein einfaches Pack für neue Spieler.",
-        "levels": [1, 2, 3]
+        "levels": ["Acu", "Bloodbath", "niwa"]
     },
     {
         "name": "Extreme Pack",
