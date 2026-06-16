@@ -1,25 +1,37 @@
 export default {
     template: `
         <div class="packs-page">
-            <h1>Packs</h1>
+            <h1 class="list-title">Packs</h1>
 
             <div v-if="loading">Loading Packs…</div>
             <div v-if="error" class="error">{{ error }}</div>
 
             <div v-if="!loading && !error">
-                <div v-for="pack in packs" :key="pack.name" class="pack">
-                    <h2 @click="togglePack(pack)" class="pack-title">
-                        {{ pack.name }}
-                    </h2>
-                    <p>{{ pack.description }}</p>
+                <div 
+                    v-for="pack in packs" 
+                    :key="pack.name" 
+                    class="list-entry"
+                    :class="{ open: pack.open }"
+                >
+                    <div class="list-entry-header" @click="togglePack(pack)">
+                        <div class="list-entry-title">{{ pack.name }}</div>
+                        <div class="list-entry-subtitle">{{ pack.description }}</div>
+                    </div>
 
-                    <transition name="fade">
-                        <ul v-if="pack.open" class="level-list">
-                            <li v-for="level in pack.loadedLevels" :key="level.id">
-                                #{{ level.placement }} — {{ level.name }}
-                            </li>
-                        </ul>
-                    </transition>
+                    <div class="list-entry-content" v-if="pack.open">
+                        <div 
+                            v-for="level in pack.loadedLevels" 
+                            :key="level.id"
+                            class="list-item"
+                        >
+                            <div class="placement">#{{ level.placement }}</div>
+
+                            <div class="level-info">
+                                <div class="level-name">{{ level.name }}</div>
+                                <div class="level-author">{{ level.creator }}</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -37,30 +49,29 @@ export default {
     async created() {
         try {
             const packsResponse = await fetch("/data/packs.json");
-            if (!packsResponse.ok) throw new Error("packs.json nicht gefunden");
             this.packs = await packsResponse.json();
 
             const listResponse = await fetch("/data/_list.json");
-            if (!listResponse.ok) throw new Error("_list.json nicht gefunden");
             this.list = await listResponse.json();
 
             for (const pack of this.packs) {
                 pack.loadedLevels = [];
-                pack.open = false; // Anfangszustand: geschlossen
+                pack.open = false;
 
                 for (const levelName of pack.levels) {
                     const levelResponse = await fetch(`/data/${levelName}.json`);
                     if (!levelResponse.ok) continue;
 
                     const levelData = await levelResponse.json();
+
                     const placementIndex = this.list.indexOf(levelName);
                     levelData.placement = placementIndex >= 0 ? placementIndex + 1 : "?";
+
                     pack.loadedLevels.push(levelData);
                 }
             }
 
         } catch (err) {
-            console.error("Fehler beim Laden:", err);
             this.error = err.message;
         } finally {
             this.loading = false;
