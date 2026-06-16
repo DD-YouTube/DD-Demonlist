@@ -31,8 +31,8 @@ export default {
     },
 
     async created() {
-        const packsData = await fetch("data/packs.json").then(r => r.json());
-        const levelsData = await fetch("data/levels.json").then(r => r.json());
+        const packsData = await fetch("/data/packs.json").then(r => r.json());
+        const levelsData = await fetch("/data/levels.json").then(r => r.json());
 
         this.packs = packsData;
         this.levels = levelsData;
