@@ -1,6 +1,7 @@
 export default {
     template: `
-        <div class="packs-page">
+        <div class="packs-page" style="grid-column: span 3;">
+
 
             <!-- Linke Sidebar -->
             <div class="packs-sidebar">
