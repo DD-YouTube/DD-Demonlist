@@ -2,6 +2,6 @@
     {
         "name": "Starter Pack",
         "description": "Ein einfaches Pack für neue Spieler.",
-        "levels": ["Acu", "Bloodbath", "niwa"]
+        "levels": [1, 2, 3]
     }
 ]
