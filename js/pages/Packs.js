@@ -12,8 +12,8 @@ export default {
                     <p>{{ pack.description }}</p>
 
                     <ul>
-                        <li v-for="id in pack.levels" :key="id">
-                            {{ getLevelName(id) }}
+                        <li v-for="level in pack.loadedLevels" :key="level.id">
+                            #{{ level.placement }} — {{ level.name }}
                         </li>
                     </ul>
                 </div>
@@ -24,7 +24,7 @@ export default {
     data() {
         return {
             packs: [],
-            levels: [],
+            list: [],
             loading: true,
             error: null
         };
@@ -32,27 +32,43 @@ export default {
 
     async created() {
         try {
+            // Packs laden
             const packsResponse = await fetch("/data/packs.json");
-            const levelsResponse = await fetch("/data/levels.json");
-
             if (!packsResponse.ok) throw new Error("packs.json nicht gefunden");
-            if (!levelsResponse.ok) throw new Error("levels.json nicht gefunden");
-
             this.packs = await packsResponse.json();
-            this.levels = await levelsResponse.json();
+
+            // Platzierungen laden
+            const listResponse = await fetch("/data/_list.json");
+            if (!listResponse.ok) throw new Error("_list.json nicht gefunden");
+            this.list = await listResponse.json();
+
+            // Für jedes Pack Level-Dateien laden
+            for (const pack of this.packs) {
+                pack.loadedLevels = [];
+
+                for (const levelName of pack.levels) {
+                    const levelResponse = await fetch(`/data/${levelName}.json`);
+
+                    if (!levelResponse.ok) {
+                        console.warn(`Level-Datei fehlt: ${levelName}.json`);
+                        continue;
+                    }
+
+                    const levelData = await levelResponse.json();
+
+                    // Platzierung bestimmen
+                    const placementIndex = this.list.indexOf(levelName);
+                    levelData.placement = placementIndex >= 0 ? placementIndex + 1 : "?";
+
+                    pack.loadedLevels.push(levelData);
+                }
+            }
 
         } catch (err) {
             console.error("Fehler beim Laden:", err);
             this.error = err.message;
         } finally {
             this.loading = false;
-        }
-    },
-
-    methods: {
-        getLevelName(id) {
-            const level = this.levels.find(l => l.id === id);
-            return level ? level.name : "Unbekanntes Level";
         }
     }
 };
