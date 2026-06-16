@@ -8,14 +8,18 @@ export default {
 
             <div v-if="!loading && !error">
                 <div v-for="pack in packs" :key="pack.name" class="pack">
-                    <h2>{{ pack.name }}</h2>
+                    <h2 @click="togglePack(pack)" class="pack-title">
+                        {{ pack.name }}
+                    </h2>
                     <p>{{ pack.description }}</p>
 
-                    <ul>
-                        <li v-for="level in pack.loadedLevels" :key="level.id">
-                            #{{ level.placement }} — {{ level.name }}
-                        </li>
-                    </ul>
+                    <transition name="fade">
+                        <ul v-if="pack.open" class="level-list">
+                            <li v-for="level in pack.loadedLevels" :key="level.id">
+                                #{{ level.placement }} — {{ level.name }}
+                            </li>
+                        </ul>
+                    </transition>
                 </div>
             </div>
         </div>
@@ -32,34 +36,25 @@ export default {
 
     async created() {
         try {
-            // Packs laden
             const packsResponse = await fetch("/data/packs.json");
             if (!packsResponse.ok) throw new Error("packs.json nicht gefunden");
             this.packs = await packsResponse.json();
 
-            // Platzierungen laden
             const listResponse = await fetch("/data/_list.json");
             if (!listResponse.ok) throw new Error("_list.json nicht gefunden");
             this.list = await listResponse.json();
 
-            // Für jedes Pack Level-Dateien laden
             for (const pack of this.packs) {
                 pack.loadedLevels = [];
+                pack.open = false; // Anfangszustand: geschlossen
 
                 for (const levelName of pack.levels) {
                     const levelResponse = await fetch(`/data/${levelName}.json`);
-
-                    if (!levelResponse.ok) {
-                        console.warn(`Level-Datei fehlt: ${levelName}.json`);
-                        continue;
-                    }
+                    if (!levelResponse.ok) continue;
 
                     const levelData = await levelResponse.json();
-
-                    // Platzierung bestimmen
                     const placementIndex = this.list.indexOf(levelName);
                     levelData.placement = placementIndex >= 0 ? placementIndex + 1 : "?";
-
                     pack.loadedLevels.push(levelData);
                 }
             }
@@ -69,6 +64,12 @@ export default {
             this.error = err.message;
         } finally {
             this.loading = false;
+        }
+    },
+
+    methods: {
+        togglePack(pack) {
+            pack.open = !pack.open;
         }
     }
 };
