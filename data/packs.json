@@ -3,10 +3,5 @@
         "name": "Starter Pack",
         "description": "Ein einfaches Pack für neue Spieler.",
         "levels": ["Acu", "Bloodbath", "niwa"]
-    },
-    {
-        "name": "Extreme Pack",
-        "description": "Nur die härtesten Extreme Demons.",
-        "levels": [5, 12, 20]
     }
 ]
