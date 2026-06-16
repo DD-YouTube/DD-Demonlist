@@ -1,24 +1,27 @@
 export default {
     template: `
         <div class="packs-page">
+            
+            <!-- Linke Sidebar -->
             <div class="packs-sidebar">
                 <button 
                     v-for="pack in packs" 
-                    :key="pack.name" 
+                    :key="pack.name"
                     class="pack-button"
                     @click="selectPack(pack)"
                     :class="{ active: selectedPack && selectedPack.name === pack.name }"
                 >
-                    {{ pack.name.toUpperCase() }}
+                    {{ pack.name }}
                 </button>
             </div>
 
+            <!-- Rechte Seite -->
             <div class="packs-content" v-if="selectedPack">
                 <h1 class="pack-title">{{ selectedPack.name }}</h1>
 
                 <div 
                     v-for="level in selectedPack.loadedLevels" 
-                    :key="level.id" 
+                    :key="level.id"
                     class="list-item"
                     @click="openLevel(level)"
                 >
@@ -29,6 +32,7 @@ export default {
                     </div>
                 </div>
             </div>
+
         </div>
     `,
 
@@ -60,11 +64,13 @@ export default {
                     const levelData = await levelResponse.json();
                     const placementIndex = this.list.indexOf(levelName);
                     levelData.placement = placementIndex >= 0 ? placementIndex + 1 : "?";
+
                     pack.loadedLevels.push(levelData);
                 }
             }
 
-            this.selectedPack = this.packs[0]; // Starter Pack standardmäßig aktiv
+            this.selectedPack = this.packs[0];
+
         } catch (err) {
             this.error = err.message;
         } finally {
@@ -77,7 +83,6 @@ export default {
             this.selectedPack = pack;
         },
         openLevel(level) {
-            // Hier kannst du deine bestehende Level-Detailseite öffnen
             this.$router.push(`/level/${level.name}`);
         }
     }
