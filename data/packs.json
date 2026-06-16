@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Starter Pack",
+        "description": "Ein einfaches Pack für neue Spieler.",
+        "levels": [1, 2, 3]
+    },
+    {
+        "name": "Extreme Pack",
+        "description": "Nur die härtesten Extreme Demons.",
+        "levels": [5, 12, 20]
+    }
+]
