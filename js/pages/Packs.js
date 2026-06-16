@@ -1,36 +1,31 @@
 export default {
     template: `
         <div class="packs-page">
-            <h1 class="list-title">Packs</h1>
-
-            <div v-if="loading">Loading Packs…</div>
-            <div v-if="error" class="error">{{ error }}</div>
-
-            <div v-if="!loading && !error">
-                <div 
+            <div class="packs-sidebar">
+                <button 
                     v-for="pack in packs" 
                     :key="pack.name" 
-                    class="list-entry"
-                    :class="{ open: pack.open }"
+                    class="pack-button"
+                    @click="selectPack(pack)"
+                    :class="{ active: selectedPack && selectedPack.name === pack.name }"
                 >
-                    <div class="list-entry-header" @click="togglePack(pack)">
-                        <div class="list-entry-title">{{ pack.name }}</div>
-                        <div class="list-entry-subtitle">{{ pack.description }}</div>
-                    </div>
+                    {{ pack.name.toUpperCase() }}
+                </button>
+            </div>
 
-                    <div class="list-entry-content" v-if="pack.open">
-                        <div 
-                            v-for="level in pack.loadedLevels" 
-                            :key="level.id"
-                            class="list-item"
-                        >
-                            <div class="placement">#{{ level.placement }}</div>
+            <div class="packs-content" v-if="selectedPack">
+                <h1 class="pack-title">{{ selectedPack.name }}</h1>
 
-                            <div class="level-info">
-                                <div class="level-name">{{ level.name }}</div>
-                                <div class="level-author">{{ level.creator }}</div>
-                            </div>
-                        </div>
+                <div 
+                    v-for="level in selectedPack.loadedLevels" 
+                    :key="level.id" 
+                    class="list-item"
+                    @click="openLevel(level)"
+                >
+                    <div class="placement">#{{ level.placement }}</div>
+                    <div class="level-info">
+                        <div class="level-name">{{ level.name }}</div>
+                        <div class="level-author">{{ level.creator }}</div>
                     </div>
                 </div>
             </div>
@@ -41,6 +36,7 @@ export default {
         return {
             packs: [],
             list: [],
+            selectedPack: null,
             loading: true,
             error: null
         };
@@ -56,21 +52,19 @@ export default {
 
             for (const pack of this.packs) {
                 pack.loadedLevels = [];
-                pack.open = false;
 
                 for (const levelName of pack.levels) {
                     const levelResponse = await fetch(`/data/${levelName}.json`);
                     if (!levelResponse.ok) continue;
 
                     const levelData = await levelResponse.json();
-
                     const placementIndex = this.list.indexOf(levelName);
                     levelData.placement = placementIndex >= 0 ? placementIndex + 1 : "?";
-
                     pack.loadedLevels.push(levelData);
                 }
             }
 
+            this.selectedPack = this.packs[0]; // Starter Pack standardmäßig aktiv
         } catch (err) {
             this.error = err.message;
         } finally {
@@ -79,8 +73,12 @@ export default {
     },
 
     methods: {
-        togglePack(pack) {
-            pack.open = !pack.open;
+        selectPack(pack) {
+            this.selectedPack = pack;
+        },
+        openLevel(level) {
+            // Hier kannst du deine bestehende Level-Detailseite öffnen
+            this.$router.push(`/level/${level.name}`);
         }
     }
 };
