@@ -1,3 +1,5 @@
+/* === PACKS-SEITE === */
+
 /* Grundlayout */
 .packs-page {
   display: flex;
@@ -6,30 +8,33 @@
   color: var(--text);
 }
 
-/* Linke Sidebar */
+/* Sidebar links */
 .packs-sidebar {
-  width: 260px;
-  padding: 20px;
+  width: 280px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
+  background-color: var(--sidebar-bg);
+  border-right: 3px solid var(--divider);
 }
 
 /* Pack-Buttons */
 .pack-button {
-  font-size: 1.4em;
-  font-weight: 700;
-  padding: 15px;
-  border-radius: 8px;
+  font-size: 1.6em;
+  font-weight: 800;
+  padding: 18px 20px;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
   background-color: var(--button-bg);
   color: var(--button-text);
-  transition: 0.2s;
+  transition: background-color 0.25s, transform 0.15s;
+  text-align: left;
 }
 
 .pack-button:hover {
-  filter: brightness(1.2);
+  transform: scale(1.03);
 }
 
 /* Aktiver Pack */
@@ -46,21 +51,21 @@
 /* Rechte Seite */
 .packs-content {
   flex: 1;
-  padding: 30px;
+  padding: 40px;
   overflow-y: auto;
 }
 
-/* Titel oben zentriert */
+/* Pack-Titel oben zentriert */
 .pack-title {
   text-align: center;
   font-size: 3em;
   font-weight: 900;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   border-bottom: 6px solid var(--accent);
   padding-bottom: 10px;
 }
 
-/* Level-Einträge wie Hauptliste */
+/* Level-Liste */
 .list-item {
   display: flex;
   align-items: center;
@@ -95,10 +100,12 @@
   opacity: 0.7;
 }
 
-/* Light Mode Variablen */
+/* === Farbvariablen für Light/Dark Mode === */
+
 .light-mode {
   --background: #ffffff;
   --text: #000000;
+  --sidebar-bg: #f5f5f5;
   --button-bg: #e0e0e0;
   --button-text: #000;
   --accent: #ff0000;
@@ -106,10 +113,10 @@
   --hover: #f5f5f5;
 }
 
-/* Dark Mode Variablen */
 .dark-mode {
   --background: #1a1a1a;
   --text: #ffffff;
+  --sidebar-bg: #111111;
   --button-bg: #333333;
   --button-text: #fff;
   --accent: #7d0000;
