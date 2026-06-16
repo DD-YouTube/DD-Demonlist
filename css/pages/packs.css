@@ -1,11 +1,11 @@
 /* === PACKS-SEITE === */
 
-/* Grundlayout */
+/* Grundlayout – nutzt deine globalen Variablen */
 .packs-page {
   display: flex;
   height: 100%;
-  background-color: var(--background);
-  color: var(--text);
+  background-color: var(--color-background);
+  color: var(--color-on-background);
 }
 
 /* Sidebar links */
@@ -15,8 +15,8 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: var(--sidebar-bg);
-  border-right: 3px solid var(--divider);
+  background-color: var(--color-background);
+  border-right: 3px solid #ddd;
 }
 
 /* Pack-Buttons */
@@ -27,8 +27,8 @@
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  background-color: var(--button-bg);
-  color: var(--button-text);
+  background-color: var(--color-background-hover);
+  color: var(--color-on-background);
   transition: background-color 0.25s, transform 0.15s;
   text-align: left;
 }
@@ -37,15 +37,10 @@
   transform: scale(1.03);
 }
 
-/* Aktiver Pack */
-.light-mode .pack-button.active {
-  background-color: #ff0000;
-  color: white;
-}
-
-.dark-mode .pack-button.active {
-  background-color: #7d0000;
-  color: white;
+/* Aktiver Pack – nutzt deine Primary-Farbe (Light/Dark kommt aus main.dark) */
+.pack-button.active {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
 }
 
 /* Rechte Seite */
@@ -61,7 +56,7 @@
   font-size: 3em;
   font-weight: 900;
   margin-bottom: 30px;
-  border-bottom: 6px solid var(--accent);
+  border-bottom: 6px solid var(--color-primary);
   padding-bottom: 10px;
 }
 
@@ -70,14 +65,15 @@
   display: flex;
   align-items: center;
   padding: 12px 0;
-  border-bottom: 1px solid var(--divider);
+  border-bottom: 1px solid #ccc;
   cursor: pointer;
   transition: background-color 0.2s, transform 0.15s;
 }
 
-/* HOVER-EFFEKT WIE HAUPTLISTE */
+/* Hover-Effekt wie Hauptliste */
 .list-item:hover {
-  background-color: var(--hover);
+  background-color: var(--color-background-hover);
+  color: var(--color-on-background-hover);
   transform: translateX(6px);
 }
 
@@ -85,7 +81,7 @@
   font-size: 1.5em;
   font-weight: 900;
   width: 70px;
-  color: var(--accent);
+  color: var(--color-primary);
 }
 
 .level-info {
@@ -101,28 +97,4 @@
 .level-author {
   font-size: 0.9em;
   opacity: 0.7;
-}
-
-/* === Farbvariablen für Light/Dark Mode === */
-
-.light-mode {
-  --background: #ffffff;
-  --text: #000000;
-  --sidebar-bg: #f5f5f5;
-  --button-bg: #e0e0e0;
-  --button-text: #000;
-  --accent: #ff0000;
-  --divider: #cccccc;
-  --hover: #f0f0f0;
-}
-
-.dark-mode {
-  --background: #1a1a1a;
-  --text: #ffffff;
-  --sidebar-bg: #111111;
-  --button-bg: #333333;
-  --button-text: #fff;
-  --accent: #7d0000;
-  --divider: #444444;
-  --hover: #222222;
 }
