@@ -38,3 +38,31 @@
 .fade-enter, .fade-leave-to {
   opacity: 0;
 }
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.placement {
+  font-size: 1.4em;
+  font-weight: 900;
+  width: 60px;
+  color: #800000;
+}
+
+.level-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.level-name {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.level-author {
+  font-size: 0.9em;
+  color: #555;
+}
