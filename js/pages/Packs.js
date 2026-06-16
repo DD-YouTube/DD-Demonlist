@@ -1,7 +1,7 @@
 export default {
     template: `
         <div class="packs-page">
-            
+
             <!-- Linke Sidebar -->
             <div class="packs-sidebar">
                 <button 
@@ -26,6 +26,7 @@ export default {
                     @click="openLevel(level)"
                 >
                     <div class="placement">#{{ level.placement }}</div>
+
                     <div class="level-info">
                         <div class="level-name">{{ level.name }}</div>
                         <div class="level-author">{{ level.creator }}</div>
