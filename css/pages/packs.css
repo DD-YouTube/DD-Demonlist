@@ -1,35 +1,40 @@
 .packs-page {
-  background-color: #fff;
-  color: #111;
   font-family: 'Segoe UI', sans-serif;
   padding: 20px;
 }
 
 .pack {
-  border-top: 8px solid #800000; /* dunkles Rot wie im Bild */
-  margin-bottom: 30px;
+  border-top: 6px solid #800000;
+  margin-bottom: 20px;
   padding-top: 10px;
 }
 
-.pack h2 {
-  font-size: 2em;
+.pack-title {
+  cursor: pointer;
+  font-size: 1.8em;
   font-weight: 700;
   margin: 0;
+  transition: color 0.2s;
 }
 
-.pack p {
-  font-size: 1.1em;
-  color: #333;
-  margin-top: 5px;
+.pack-title:hover {
+  color: #b30000;
 }
 
-.pack ul {
+.level-list {
   margin-top: 10px;
   list-style-type: none;
   padding-left: 0;
 }
 
-.pack li {
+.level-list li {
   font-size: 1em;
   margin-bottom: 4px;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
