@@ -1,3 +1,12 @@
+.packs-page.dark {
+    --color-background: var(--color-background);
+    --color-on-background: var(--color-on-background);
+    --color-background-hover: var(--color-background-hover);
+    --color-on-background-hover: var(--color-on-background-hover);
+    --color-primary: var(--color-primary);
+    --color-on-primary: var(--color-on-primary);
+}
+
 .packs-page {
     grid-column: span 3;
 }
