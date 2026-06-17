@@ -5,12 +5,6 @@
     --color-on-background-hover: var(--color-on-background-hover);
     --color-primary: var(--color-primary);
     --color-on-primary: var(--color-on-primary);
-}
-
-.packs-page {
-    grid-column: span 3;
-}
-
 /* === PACKS-SEITE === */
 
 /* Grundlayout – nutzt globale Variablen */
