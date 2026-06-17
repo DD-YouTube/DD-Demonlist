@@ -46,6 +46,10 @@ main {
     column-gap: 2rem;
 }
 
+main > * {
+    grid-column: span 3;
+}
+
 header {
     display: flex;
     padding-inline: calc(25vw - 10rem);
