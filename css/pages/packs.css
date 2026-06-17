@@ -1,13 +1,6 @@
-.packs-page.dark {
-    --color-background: var(--color-background);
-    --color-on-background: var(--color-on-background);
-    --color-background-hover: var(--color-background-hover);
-    --color-on-background-hover: var(--color-on-background-hover);
-    --color-primary: var(--color-primary);
-    --color-on-primary: var(--color-on-primary);
 /* === PACKS-SEITE === */
 
-/* Grundlayout – nutzt globale Variablen */
+/* Haupt-Wrapper */
 .packs-page {
   display: flex;
   height: 100%;
@@ -92,7 +85,7 @@
   color: var(--color-primary);
 }
 
-/* Nur der Level-Name bleibt */
+/* Level-Name */
 .level-name {
   font-size: 1.4em;
   font-weight: 700;
