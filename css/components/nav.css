@@ -1,67 +1,54 @@
 .nav {
     display: flex;
-    align-items: center;
-    gap: 2rem;
+    column-gap: 2rem;
 }
-
-.nav__tab {
+.nav .nav__tab {
+    padding-top: 4px;
+    border-bottom: 4px solid transparent;
+    display: flex;
+    align-items: center;
+    padding-inline: 0.5rem;
+    transition: border-color 100ms ease;
+}
+.nav .nav__tab.router-link-active {
+    border-color: var(--color-on-primary);
+}
+.nav .nav__tab:hover {
+    border-color: var(--color-on-primary);
+}
+.nav .nav__actions {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav .nav__actions .nav__icon {
+    height: 3rem;
+    width: 3rem;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 1rem;
-    height: 100%;
-    color: var(--color-on-primary);
-    opacity: 0.7;
-    transition: opacity 0.2s;
+    transition: background-color 100ms ease;
 }
-
-.nav__tab.router-link-active {
-    opacity: 1;
+.nav .nav__actions .nav__icon:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
-
-.nav__tab:hover {
-    opacity: 1;
+.nav .nav__actions .nav__icon img {
+    height: 1.5rem;
 }
-
-.nav__actions {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-left: auto;
-}
-
-.nav__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2rem;
-    width: 2rem;
-    padding: 0.25rem;
-    border-radius: 0.25rem;
-    background-color: var(--color-background-hover);
-    transition: background-color 0.2s;
-}
-
-.nav__icon:hover {
-    background-color: var(--color-background-hover);
-}
-
-.nav__cta {
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
+.nav .nav__actions .nav__cta {
+    margin-left: 1rem;
+    padding: 1rem;
     background-color: var(--color-on-primary);
     color: var(--color-primary);
-    transition: opacity 0.2s;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 0.5rem 0 rgba(0, 0, 102, 0.5);
+    transition: transform 100ms ease;
 }
-
-.nav__cta:hover {
-    opacity: 0.8;
-}
-
-/* Mobile */
-@media screen and (max-width: 1365px) {
-    header {
-        display: flex;
-        padding-inline: calc(25vw - 10rem);
-    }
+.nav .nav__actions .nav__cta:hover:not(:active) {
+    transform: translateY(-2px);
 }
