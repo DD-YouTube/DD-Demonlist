@@ -85,3 +85,10 @@
   font-size: 1.4em;
   font-weight: 700;
 }
+
+.pack-description {
+    font-size: 1.2em;
+    opacity: 0.85;
+    margin-bottom: 20px;
+    white-space: pre-line;
+}
