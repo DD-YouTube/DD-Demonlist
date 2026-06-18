@@ -79,15 +79,19 @@ export default {
         }
     },
 
-    methods: {
+     methods: {
         selectPack(pack) {
             this.selectedPack = pack;
         },
 
-        // ⭐ Öffnet Verification-Link in neuem Tab
         openLevel(level) {
-            // Falls dein JSON-Feld anders heißt, sag Bescheid!
             const url = level.verification || level.video || level.link;
 
             if (url) {
-                window.open(url
+                window.open(url, "_blank");
+            } else {
+                console.warn("Kein Verification-Link für Level:", level.name);
+            }
+        }
+    }
+};
