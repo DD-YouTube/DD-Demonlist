@@ -30,6 +30,14 @@ export default {
                     <div class="level-info">
                         <div class="level-name">{{ level.name }}</div>
                         <div class="level-author">{{ level.creator }}</div>
+
+                        <!-- ⭐ Beschreibung -->
+                        <div 
+                            v-if="level.description"
+                            class="level-description"
+                        >
+                            {{ level.description }}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -79,11 +87,12 @@ export default {
         }
     },
 
-     methods: {
+    methods: {
         selectPack(pack) {
             this.selectedPack = pack;
         },
 
+        // ⭐ Öffnet Verification-Link in neuem Tab
         openLevel(level) {
             const url = level.verification || level.video || level.link;
 
