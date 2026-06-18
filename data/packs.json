@@ -12,6 +12,6 @@
     {
         "name": "New Hardest Pack 2",
         "description": "A Pack with DD's New Hardests.",
-        "levels": ["SlaughterHouse", "SWUnlimited", "Acu"]
+        "levels": ["SLH", "SWUnlimited", "Acu"]
     }
 ]
