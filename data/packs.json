@@ -1,12 +1,18 @@
 [
     {
-        "name": "Starter Pack",
-        "description": "Ein einfaches Pack für neue Spieler.",
-        "levels": ["Bloodbath", "niwa", "amethyst"]
+        "name": "First Extremes Pack",
+        "description": "A pack with DD's first three Extremes.",
+        "levels": ["Bloodbath", "niwa", "Acu"]
     },
     {
-        "name": "Tidal Wave test",
-        "description": "Ein einfaches Pack für neue Spieler.",
-        "levels": ["CraZy", "WindyLandscape", "Mehdi"]
+        "name": "New Hardest Pack 1",
+        "description": "A Pack with DD's New Hardests.",
+        "levels": ["Jawbreaker", "Thermodynamix", "ElectromanInsanity"]
+    },
+    {
+        "name": "New Hardest Pack 2",
+        "description": "A Pack with DD's New Hardests.",
+        "levels": ["SlaughterHouse", "SWUnlimited", "Acu"]
     }
+]
 ]
