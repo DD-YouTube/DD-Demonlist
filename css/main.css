@@ -10,7 +10,8 @@
 }
 
 main.dark,
-header.dark {
+header.dark
+router-view.dark {
     color-scheme: dark;
     --color-background: #1c1b1f;
     --color-on-background: white;
