@@ -19,6 +19,11 @@ export default {
             <div class="packs-content" v-if="selectedPack">
                 <h1 class="pack-title">{{ selectedPack.name }}</h1>
 
+                <!-- ⭐ Pack-Beschreibung -->
+                <p v-if="selectedPack.description" class="pack-description">
+                    {{ selectedPack.description }}
+                </p>
+
                 <div 
                     v-for="level in selectedPack.loadedLevels" 
                     :key="level.id"
@@ -30,14 +35,6 @@ export default {
                     <div class="level-info">
                         <div class="level-name">{{ level.name }}</div>
                         <div class="level-author">{{ level.creator }}</div>
-
-                        <!-- ⭐ Beschreibung -->
-                        <div 
-                            v-if="level.description"
-                            class="level-description"
-                        >
-                            {{ level.description }}
-                        </div>
                     </div>
                 </div>
             </div>
