@@ -1,7 +1,6 @@
 export default {
     template: `
-        <div class="packs-page" style="grid-column: span 3;">
-
+        <div class="packs-page">
 
             <!-- Linke Sidebar -->
             <div class="packs-sidebar">
@@ -84,8 +83,11 @@ export default {
         selectPack(pack) {
             this.selectedPack = pack;
         },
+
+        // ⭐ Öffnet Verification-Link in neuem Tab
         openLevel(level) {
-            this.$router.push(`/level/${level.name}`);
-        }
-    }
-};
+            // Falls dein JSON-Feld anders heißt, sag Bescheid!
+            const url = level.verification || level.video || level.link;
+
+            if (url) {
+                window.open(url
