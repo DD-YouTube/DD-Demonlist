@@ -13,5 +13,10 @@
         "name": "New Hardest Pack 2",
         "description": "A Pack with DD's New Hardests.",
         "levels": ["SLH", "SWUnlimited", "Acu"]
+    },
+     {
+        "name": "Up-Arrow Pack",
+        "description": "A Pack with DD's top 3 Hardest Levels beaten on Up-Arrow.",
+        "levels": ["SWUnlimited", "pgclubstep", "DeathStep"]
     }
 ]
