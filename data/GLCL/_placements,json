@@ -1,4 +1,3 @@
-{
-    "CONCENTRATION": 7
-}
-
+[
+    { "name": "CONCENTRATION", "placement": 7 }
+]
