@@ -32,21 +32,25 @@ export default {
     },
 
     async created() {
-        // 1. Placements + Reihenfolge laden
+        // 1. Reihenfolge laden
+        const orderResponse = await fetch("/data/GLCL/_list.json");
+        const order = await orderResponse.json();
+
+        // 2. Placements laden
         const placementResponse = await fetch("/data/GLCL/_placements.json");
-        const placementList = await placementResponse.json();
+        const placements = await placementResponse.json();
 
         const loaded = [];
 
-        // 2. Leveldaten laden
-        for (const entry of placementList) {
-            const response = await fetch(`/data/GLCL/${entry.name}.json`);
+        // 3. Leveldaten laden
+        for (const levelName of order) {
+            const response = await fetch(`/data/GLCL/${levelName}.json`);
             if (!response.ok) continue;
 
             const data = await response.json();
 
-            // ⭐ Placement direkt aus _placements.json
-            data.placement = entry.placement;
+            // ⭐ Placement aus _placements.json
+            data.placement = placements[levelName] ?? "?";
 
             loaded.push(data);
         }
