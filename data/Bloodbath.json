@@ -6,7 +6,7 @@
     "verifier": "Riot",
     "verification": "https://www.youtube.com/watch?v=twTw4fjT0ik&t",
     "percentToQualify": 54,
-    "enjoyment": "8/10",
+    "enjoyment": "76.67/100",
     "difficulty": "Extreme Demon",
     "description": "A legendary level made and verified by the best player of 2015 Riot. The hardest level of 2015.",
     "records": [
@@ -21,6 +21,12 @@
             "link": "https://www.youtube.com/watch?v=CQeezCdF4mk",
             "percent": 100,
             "hz": 120
+        },
+                {
+            "user": "Shialaxy",
+            "link": "https://youtu.be/WaFJL5aVFu8",
+            "percent": 100,
+            "hz": 180
         }
     ]
 }
