@@ -9,6 +9,14 @@
     "enjoyment": "6/10",
     "difficulty": "Hard Demon",
     "description": "DD rebeat this level due to him hacking it one or two years before.",
+    "history": [
+        { 
+            "date": "2026-05-02",
+        "position": 9,
+        "change": 0,
+        "reason": "Demonlist got created"
+        }
+    ],
     "records": [
         {
             "user": "DD",
