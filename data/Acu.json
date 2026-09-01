@@ -9,6 +9,14 @@
     "enjoyment": "3/10",
     "difficulty": "Extreme Demon",
     "description": "One of the easiest Extreme Demons. The community is split about the opinion of Acu being trash or fun.",
+    "history": [
+        { 
+            "date": "2026-05-02",
+        "position": 1,
+        "change": 0,
+        "reason": "Demonlist got created"
+        }
+    ],
     "records": [
         {
             "user": "DD",
