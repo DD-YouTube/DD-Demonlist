@@ -64,11 +64,29 @@ export default {
     <h2>Position History</h2>
     <ul class="history-list">
         <li v-for="entry in level.history">
+            <!-- Datum -->
             <span class="type-title-sm">{{ entry.date }}</span>
-            <p>#{{ entry.position }}</p>
+
+            <!-- Begründung -->
+            <span class="history-reason" v-if="entry.reason">
+                {{ entry.reason }}
+            </span>
+
+            <!-- Positionsänderung -->
+            <p v-if="entry.change !== 0" 
+               :class="{
+                   'change-positive': entry.change > 0,
+                   'change-negative': entry.change < 0
+               }">
+                {{ entry.change > 0 ? '+' + entry.change : entry.change }}
+            </p>
+
+            <!-- Position -->
+            <p class="history-position">#{{ entry.position }}</p>
         </li>
     </ul>
 </div>
+
 
                     <h2>Records</h2>
                     <p v-if="selected + 1 <= 75"><strong>{{ level.percentToQualify }}%</strong> or better to qualify</p>
