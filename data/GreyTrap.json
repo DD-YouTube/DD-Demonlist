@@ -15,6 +15,12 @@
         "position": 20,
         "change": 0,
         "reason": "Grey Trap got placed at #20"
+        },
+        { 
+            "date": "2026-05-30",
+        "position": 21,
+        "change": -1,
+        "reason": "Double Dash got placed above"
         }
     ],
     "records": [
