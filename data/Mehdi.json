@@ -9,6 +9,14 @@
     "enjoyment": "2/10",
     "difficulty": "Hard Demon",
     "description": "This level sucks, it has bugs. Sephtis has more bugs though.",
+    "history": [
+        { 
+            "date": "2026-06-05",
+        "position": 11,
+        "change": 0,
+        "reason": "Mehdi got placed at #11"
+        }
+    ],
     "records": [
         {
             "user": "DD",
