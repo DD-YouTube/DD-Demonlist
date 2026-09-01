@@ -9,6 +9,26 @@
     "enjoyment": "76.67/100",
     "difficulty": "Extreme Demon",
     "description": "A legendary level made and verified by the best player of 2015 Riot. The hardest level of 2015.",
+    "history": [
+        { 
+            "date": "2026-06-06",
+        "position": 1,
+        "change": 0,
+        "reason": "Bloodbath got placed at #1"
+        },
+        { 
+            "date": "2026-08-05",
+        "position": 2,
+        "change": -1,
+        "reason": "Artificial Ascent was placed above"
+        },
+        { 
+            "date": "2026-08-30",
+        "position": 3,
+        "change": -1,
+        "reason": "gravity was placed above"
+        }
+    ],
     "records": [
         {
             "user": "DD",
