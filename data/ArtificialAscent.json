@@ -10,7 +10,12 @@
     "difficulty": "Extreme Demon",
     "description": "The first level of the Tech Trilogy. DD beat it after a fail at 94% and 18 260 attempts. Almost as much as Acu.",
     "history": [
-        { "date": "2026-08-05", "position": 1 }
+        { 
+            "date": "2026-08-05",
+        "position": 1,
+        "change": 0,
+        "reason": "Artificial Ascent got placed at #1"
+        }
     ],
     "records": [
         {
