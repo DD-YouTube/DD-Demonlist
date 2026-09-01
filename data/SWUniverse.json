@@ -9,6 +9,14 @@
     "enjoyment": "7/10",
     "difficulty": "Insane Demon",
     "description": "The second Insane Demon DD has beaten. Incredibly fun.",
+    "history": [
+        { 
+            "date": "2026-05-02",
+        "position": 4,
+        "change": 0,
+        "reason": "Demonlist got created"
+        }
+    ],
     "records": [
         {
             "user": "DD",
