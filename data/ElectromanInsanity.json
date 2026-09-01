@@ -9,6 +9,14 @@
     "enjoyment": "7/10",
     "difficulty": "Hard Demon",
     "description": "This level uses the Song from the Main Level Electroman Adventures. It was DD's last Hardest before he beat his first Insane Demon.",
+    "history": [
+        { 
+            "date": "2026-05-02",
+        "position": 10,
+        "change": 0,
+        "reason": "Demonlist got created"
+        }
+    ],
     "records": [
         {
             "user": "DD",
