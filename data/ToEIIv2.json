@@ -9,6 +9,14 @@
     "enjoyment": "0/10",
     "difficulty": "Hard Demon",
     "description": "This level is the worst v2 level I have beaten.",
+    "history": [
+        { 
+            "date": "2026-05-02",
+        "position": 13,
+        "change": 0,
+        "reason": "Demonlist got created"
+        }
+    ],
     "records": [
         {
             "user": "DD",
