@@ -9,6 +9,14 @@
     "enjoyment": "8/10",
     "difficulty": "Hard Demon",
     "description": "This level that has a more calm vibe to it uses a song by the talented creator JamAttack.",
+    "history": [
+        { 
+            "date": "2026-05-24",
+        "position": 18,
+        "change": 0,
+        "reason": "Demonlist got created"
+        }
+    ],
     "records": [
         {
             "user": "DD",
