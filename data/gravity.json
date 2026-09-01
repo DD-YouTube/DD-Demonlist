@@ -9,6 +9,14 @@
     "enjoyment": "100/100",
     "difficulty": "Extreme Demon",
     "description": "The sequel to the extreme demon moment. Currently one spot above Bloodbath and DD's first skillset challenge extreme.",
+    "history": [
+        { 
+            "date": "2026-08-30",
+        "position": 2,
+        "change": 0,
+        "reason": "gravity got placed at #2"
+        }
+    ],
     "records": [
         {
             "user": "DD",
