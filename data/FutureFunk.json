@@ -9,6 +9,14 @@
     "enjoyment": "3/10",
     "difficulty": "Hard Demon",
     "description": "This level is a popular Hard Demon made by the creator JonathanGD. DD surprisingly fluked the ending aka the hardest part. He unfortunately died to the spike right after the dual because he clicked one frame too late. He also fluked the dual.",
+    "history": [
+        { 
+            "date": "2026-05-02",
+        "position": 6,
+        "change": 0,
+        "reason": "Demonlist got created"
+        }
+    ],
     "records": [
         {
             "user": "DD",
