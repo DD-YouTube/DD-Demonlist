@@ -9,6 +9,14 @@
     "enjoyment": "5/10",
     "difficulty": "Hard Demon",
     "description": "This is the first level he beat on-stream surprisingly beating it 2 minutes into the stream.",
+    "history": [
+        { 
+            "date": "2026-05-02",
+        "position": 11,
+        "change": 0,
+        "reason": "Demonlist got created"
+        }
+    ],
     "records": [
         {
             "user": "DD",
