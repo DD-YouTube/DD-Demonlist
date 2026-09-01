@@ -9,6 +9,14 @@
     "enjoyment": "7/10",
     "difficulty": "Insane Demon",
     "description": "DD beat this level in under 30 minutes and he fluked it from 56%.",
+    "history": [
+        { 
+            "date": "2026-05-02",
+        "position": 5,
+        "change": 0,
+        "reason": "Demonlist got created"
+        }
+    ],
     "records": [
         {
             "user": "DD",
