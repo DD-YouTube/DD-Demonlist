@@ -15,6 +15,12 @@
         "position": 8,
         "change": 0,
         "reason": "Demonlist got created"
+        },
+        { 
+            "date": "2026-06-05",
+        "position": 9,
+        "change": -1,
+        "reason": "Magma Bound got placed above"
         }
     ],
     "records": [
