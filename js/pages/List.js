@@ -60,6 +60,16 @@ export default {
     <p>{{ level.difficulty }}</p>
 </li>
                     </ul>
+                    <div class="history" v-if="level.history && level.history.length">
+    <h2>Position History</h2>
+    <ul class="history-list">
+        <li v-for="entry in level.history">
+            <span class="type-title-sm">{{ entry.date }}</span>
+            <p>#{{ entry.position }}</p>
+        </li>
+    </ul>
+</div>
+
                     <h2>Records</h2>
                     <p v-if="selected + 1 <= 75"><strong>{{ level.percentToQualify }}%</strong> or better to qualify</p>
                     <p v-else-if="selected +1 <= 150"><strong>100%</strong> or better to qualify</p>
