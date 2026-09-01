@@ -9,6 +9,14 @@
     "enjoyment": "6/10",
     "difficulty": "Hard Demon",
     "description": "This classic Nine Circles level was DD's first ever Hard Demon.",
+    "history": [
+        { 
+            "date": "2026-05-02",
+        "position": 15,
+        "change": 0,
+        "reason": "Demonlist got created"
+        }
+    ],
     "records": [
         {
             "user": "DD",
