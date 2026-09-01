@@ -9,6 +9,14 @@
     "enjoyment": "5/10",
     "difficulty": "Hard Demon",
     "description": "DD almost did a frame perfect route on that level because he didn't know how to play the Cube and Ball dual.",
+    "history": [
+        { 
+            "date": "2026-05-26",
+        "position": 20,
+        "change": 0,
+        "reason": "Grey Trap got placed at #20"
+        }
+    ],
     "records": [
         {
             "user": "DD",
