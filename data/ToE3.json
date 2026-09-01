@@ -36,9 +36,15 @@
         },
         {
             "date": "2026-05-26",
-            "position": 20,
+            "position": 21,
             "change": -1.
             "reason": "Grey Trap got placed above"
+        },
+        { 
+            "date": "2026-05-30",
+        "position": 22,
+        "change": -1,
+        "reason": "Double Dash got placed above"
         }
     ],
     "records": [
