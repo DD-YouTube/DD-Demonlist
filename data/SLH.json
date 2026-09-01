@@ -9,6 +9,14 @@
     "enjoyment": "2/10",
     "difficulty": "Insane Demon",
     "description": "This Insane Demon is the first Insane Demon completed by DD in only 5 284 attempts. He beat it while being at his cousin's house.",
+    "history": [
+        { 
+            "date": "2026-05-02",
+        "position": 3,
+        "change": 0,
+        "reason": "Demonlist got created"
+        }
+    ],
     "records": [
         {
             "user": "DD",
