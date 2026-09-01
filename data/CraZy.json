@@ -9,6 +9,14 @@
     "enjoyment": "5/10",
     "difficulty": "Hard Demon",
     "description": "The first level of the CraZy series made by DavJT. Patat beat it as the World's Smallest Jump in Geometry Dash from Little Thingy.",
+    "history": [
+        { 
+            "date": "2026-05-02",
+        "position": 7,
+        "change": 0,
+        "reason": "Demonlist got created"
+        }
+    ],
     "records": [
         {
             "user": "DD",
