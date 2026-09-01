@@ -80,6 +80,51 @@
     margin-top: 1rem;
 }
 
+.page-list .level-container .level .history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page-list .level-container .level .history-list li {
+    display: grid;
+    grid-template-columns: 1fr 2fr auto auto;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--color-background-hover);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.page-list .level-container .level .history-list li span,
+.page-list .level-container .level .history-list li p {
+    margin: 0;
+}
+
+/* Begründung */
+.page-list .level-container .level .history-reason {
+    color: var(--color-on-background);
+    opacity: 0.85;
+}
+
+/* Positionsänderung */
+.change-positive {
+    color: #4caf50; /* Grün */
+    font-weight: 700;
+}
+
+.change-negative {
+    color: #f44336; /* Rot */
+    font-weight: 700;
+}
+
+/* Position */
+.history-position {
+    font-weight: 700;
+}
+
+
 .page-list .level-container .level .history h2 {
     font-size: 1.6em;
     margin-bottom: 0.5rem;
