@@ -75,6 +75,43 @@
 .page-list .level-container .level .records {
     table-layout: fixed;
 }
+/* === POSITION HISTORY === */
+.page-list .level-container .level .history {
+    margin-top: 1rem;
+}
+
+.page-list .level-container .level .history h2 {
+    font-size: 1.6em;
+    margin-bottom: 0.5rem;
+}
+
+.page-list .level-container .level .history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page-list .level-container .level .history-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-background-hover);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.page-list .level-container .level .history-list li span {
+    font-weight: 600;
+    color: var(--color-on-background);
+}
+
+.page-list .level-container .level .history-list li p {
+    font-weight: 700;
+    color: var(--color-on-background);
+    margin: 0;
+}
+
 .page-list .level-container .level .records tr td:not(:last-child) {
     padding-right: 1rem;
 }
