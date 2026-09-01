@@ -9,6 +9,14 @@
     "enjoyment": "10/10",
     "difficulty": "Hard Demon",
     "description": "This level is a very learny but fun Hard Demon. Even though it looks like you have to click to the beat DON'T do it.",
+    "history": [
+        { 
+            "date": "2026-05-02",
+        "position": 16,
+        "change": 0,
+        "reason": "Demonlist got created"
+        }
+    ],
     "records": [
         {
             "user": "DD",
