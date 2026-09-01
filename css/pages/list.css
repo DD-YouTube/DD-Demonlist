@@ -136,16 +136,6 @@
     margin: 0;
 }
 
-.page-list .level-container .level .history-list li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--color-background-hover);
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
 .page-list .level-container .level .history-list li span {
     font-weight: 600;
     color: var(--color-on-background);
