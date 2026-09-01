@@ -9,6 +9,14 @@
     "enjoyment": "4/10",
     "difficulty": "Insane Demon",
     "description": "This insane demon made DD crash out because he died to Coyote Timings veeery often.",
+    "history": [
+        { 
+            "date": "2026-06-05",
+        "position": 6,
+        "change": 0,
+        "reason": "Magma Bound got placed at #11"
+        }
+    ],
     "records": [
         {
             "user": "DD",
