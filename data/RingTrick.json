@@ -9,6 +9,14 @@
     "enjoyment": "8/10",
     "difficulty": "Hard Demon",
     "description": "This level is a rather interesting Nine Circles level ending with a dash orb release that's annoying. Patat calls this level ^Offbrand Solar Flare^.",
+    "history": [
+        { 
+            "date": "2026-06-13",
+        "position": 9,
+        "change": 0,
+        "reason": "Ring Trick got placed at #9"
+        }
+    ],
     "records": [
         {
             "user": "DD",
