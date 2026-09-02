@@ -45,6 +45,18 @@
         "position": 21,
         "change": -1,
         "reason": "Magma Bound got placed above"
+        },
+        { 
+            "date": "2026-06-06",
+        "position": 22,
+        "change": -1,
+        "reason": "Bloodbath got placed above"
+        },
+        { 
+            "date": "2026-06-06",
+        "position": 23,
+        "change": -1,
+        "reason": "niwa got placed above"
         }
     ],
     "records": [
