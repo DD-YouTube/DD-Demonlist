@@ -81,6 +81,18 @@
         "position": 28,
         "change": -1,
         "reason": "Troll Madness got placed above"
+        },
+        { 
+            "date": "2026-06-22",
+        "position": 29,
+        "change": -1,
+        "reason": "Death Step got placed above"
+        },
+        { 
+            "date": "2026-06-22",
+        "position": 30,
+        "change": -1,
+        "reason": "pg clubstep got placed above"
         }
     ],
     "records": [
