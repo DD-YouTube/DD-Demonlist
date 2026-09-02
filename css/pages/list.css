@@ -109,15 +109,16 @@
 }
 
 /* Positionsänderung */
-.change-positive {
+.page-list .level-container .level .history-list li p.change-positive {
     color: #4caf50; /* Grün */
     font-weight: 700;
 }
 
-.change-negative {
+.page-list .level-container .level .history-list li p.change-negative {
     color: #f44336; /* Rot */
     font-weight: 700;
 }
+
 
 /* Position */
 .history-position {
