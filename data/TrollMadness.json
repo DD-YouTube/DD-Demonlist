@@ -9,6 +9,14 @@
     "enjoyment": "3/10",
     "difficulty": "Hard Demon",
     "description": "This level is very learny.",
+    "history": [
+        { 
+            "date": "2026-06-13",
+        "position": 27,
+        "change": 0,
+        "reason": "Troll Madness got placed at #27"
+        }
+    ],
     "records": [
         {
             "user": "DD",
