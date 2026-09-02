@@ -9,6 +9,20 @@
     "enjoyment": "5/10",
     "difficulty": "Hard Demon",
     "description": "Currently his 3rd Hardest on Up-Arrow. He beat it while being at his cousin's house. He also beat it the same day as pg clubstep.",
+    "history": [
+        { 
+            "date": "2026-06-22",
+        "position": 27,
+        "change": 0,
+        "reason": "Death Step got placed at #27"
+        },
+        { 
+            "date": "2026-06-22",
+        "position": 28,
+        "change": -1,
+        "reason": "pg clubstep got placed above"
+        }
+    ],
     "records": [
         {
             "user": "DD",
