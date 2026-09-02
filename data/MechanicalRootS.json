@@ -63,6 +63,24 @@
         "position": 26,
         "change": -1,
         "reason": "pg clubstep got placed above"
+        },
+        { 
+            "date": "2026-07-02",
+        "position": 27,
+        "change": -1,
+        "reason": "CraZy II got placed above"
+        },
+        { 
+            "date": "2026-07-03",
+        "position": 28,
+        "change": -1,
+        "reason": "Cataclysm got placed above"
+        },
+        { 
+            "date": "2026-07-10",
+        "position": 29,
+        "change": -1,
+        "reason": "aftermath got placed above"
         }
     ],
     "records": [
