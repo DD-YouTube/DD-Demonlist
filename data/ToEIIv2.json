@@ -57,6 +57,24 @@
         "position": 20,
         "change": -1,
         "reason": "Ring Trick got placed above"
+        },
+        { 
+            "date": "2026-07-02",
+        "position": 21,
+        "change": 0,
+        "reason": "CraZy II got placed above"
+        },
+        { 
+            "date": "2026-07-03",
+        "position": 22,
+        "change": -1,
+        "reason": "Cataclysm got placed above"
+        },
+        { 
+            "date": "2026-07-10",
+        "position": 23,
+        "change": -1,
+        "reason": "aftermath got placed above"
         }
     ],
     "records": [
