@@ -9,6 +9,20 @@
     "enjoyment": "6/10",
     "difficulty": "Extreme Demon",
     "description": "The first level of the Apocalyptic Trilogy. DD beat it in 2 days with prepractice ofc.",
+    "history": [
+        { 
+            "date": "2026-07-03",
+        "position": 2,
+        "change": 0,
+        "reason": "Cataclysm got placed at #2"
+        },
+        { 
+            "date": "2026-07-10",
+        "position": 3,
+        "change": -1,
+        "reason": "aftermath got placed above"
+        }
+    ],
     "records": [
         {
             "user": "DD",
