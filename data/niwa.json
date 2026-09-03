@@ -27,6 +27,12 @@
         "position": 4,
         "change": -1,
         "reason": "aftermath got placed above"
+        },
+        { 
+            "date": "2026-08-05",
+        "position": 5,
+        "change": -1,
+        "reason": "Artificial Ascent got placed above"
         }
     ],
     "records": [
