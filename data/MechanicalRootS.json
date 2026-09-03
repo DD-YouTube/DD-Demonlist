@@ -81,6 +81,18 @@
         "position": 29,
         "change": -1,
         "reason": "aftermath got placed above"
+        },
+        { 
+            "date": "2026-08-05",
+        "position": 30,
+        "change": -1,
+        "reason": "Stalemate got placed above"
+        },
+        { 
+            "date": "2026-08-05",
+        "position": 31,
+        "change": -1,
+        "reason": "Artificial Ascent got placed above"
         }
     ],
     "records": [
