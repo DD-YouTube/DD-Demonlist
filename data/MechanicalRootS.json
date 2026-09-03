@@ -93,6 +93,18 @@
         "position": 31,
         "change": -1,
         "reason": "Artificial Ascent got placed above"
+        },
+        { 
+            "date": "2026-08-07",
+        "position": 32,
+        "change": -1,
+        "reason": "MasmeCrescent got placed above"
+        },
+        { 
+            "date": "2026-08-08",
+        "position": 33,
+        "change": -1,
+        "reason": "Wedy Landscape got placed above"
         }
     ],
     "records": [
