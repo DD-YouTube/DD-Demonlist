@@ -9,6 +9,20 @@
     "enjoyment": "8/10",
     "difficulty": "Insane Demon",
     "description": "A legendary Insane Demon. DD beat it over 20 times due to the GDL World Cup. We avoid talking about Germany vs Indonesia.",
+    "history": [
+        { 
+            "date": "2026-08-05",
+        "position": 12,
+        "change": 0,
+        "reason": "Stalemate got placed at #12"
+        },
+        { 
+            "date": "2026-08-05",
+        "position": 13,
+        "change": -1,
+        "reason": "Artificial Ascent got placed above"
+        }
+    ],
     "records": [
         {
             "user": "DD",
