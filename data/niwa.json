@@ -33,6 +33,12 @@
         "position": 5,
         "change": -1,
         "reason": "Artificial Ascent got placed above"
+        },
+        { 
+            "date": "2026-08-07",
+        "position": 6,
+        "change": -1,
+        "reason": "MasmeCrescent got placed above"
         }
     ],
     "records": [
