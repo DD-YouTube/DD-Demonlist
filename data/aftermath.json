@@ -9,6 +9,20 @@
     "enjoyment": "43/100",
     "difficulty": "Extreme Demon",
     "description": "The last level of The Apocalyptic Trilogy. DD had to beat it because the wheel said so. He beat it after 14 ending deaths and the worst fail DD ever had: 97%... He beat it 2 hours later.",
+    "history": [
+        { 
+            "date": "2026-07-10",
+        "position": 2,
+        "change": 0,
+        "reason": "aftermath got placed at #2"
+        },
+        { 
+            "date": "2026-08-05",
+        "position": 3,
+        "change": -1,
+        "reason": "Artificial Ascent got placed above"
+        }
+    ],
     "records": [
         {
             "user": "DD",
