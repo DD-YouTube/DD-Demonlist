@@ -9,6 +9,14 @@
     "enjoyment": "7/10",
     "difficulty": "Unrated",
     "description": "DD made this level as a joke because Windy Landscape sounds close to Wedy Landscape. It's filled with Boykisser art.",
+    "history": [
+        { 
+            "date": "2026-08-07",
+        "position": 11,
+        "change": 0,
+        "reason": "Wedy Landscape got placed at #11"
+        }
+    ],
     "records": [
     ]
 }
