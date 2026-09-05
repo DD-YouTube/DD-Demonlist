@@ -1,0 +1,28 @@
+{
+    "id": 37456092,
+    "name": "Digital Descent",
+    "author": "ViPriN",
+    "creators": ["ViPrin & More"],
+    "verifier": "Combined",
+    "verification": "https://www.youtube.com/watch?v=mX8j8jG-Um8",
+    "percentToQualify": "57",
+    "enjoyment": "8/10",
+    "difficulty": "Extreme Demon",
+    "description": "The second level of the Tech Trilogy. DD beat it after a fail at 90% and 5.6k attempts. The least attempts of a new hardest extreme.",
+    "history": [
+        { 
+            "date": "2026-09-05",
+        "position": 1,
+        "change": 0,
+        "reason": "Digital Descent got placed at #1"
+        }
+    ],
+    "records": [
+        {
+            "user": "DD",
+            "link": "https://www.youtube.com/watch?v=b5z5cTym1Ao",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
