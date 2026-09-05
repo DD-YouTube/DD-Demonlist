@@ -27,6 +27,12 @@
         "position": 3,
         "change": -1,
         "reason": "gravity was placed above"
+        },
+        { 
+            "date": "2026-09-05",
+        "position": 4,
+        "change": -1,
+        "reason": "Digital Descent got placed above"
         }
     ],
     "records": [
