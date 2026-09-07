@@ -1,0 +1,28 @@
+{
+    "id": 85933508,
+    "name": "Lost Love",
+    "author": "TheBlackHell",
+    "creators": ["TheBlackHell"],
+    "verifier": "Aespha",
+    "verification": "https://www.youtube.com/watch?v=KGh4Fe5SmXc",
+    "percentToQualify": "71",
+    "enjoyment": "7/10",
+    "difficulty": "Extreme Demon",
+    "description": "DD's first memory level",
+    "history": [
+        { 
+            "date": "2026-09-06",
+        "position": 1,
+        "change": 0,
+        "reason": "Lost Love got placed at #9"
+        }
+    ],
+    "records": [
+        {
+            "user": "DD",
+            "link": "https://youtu.be/p-WfbMFPgDM",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
