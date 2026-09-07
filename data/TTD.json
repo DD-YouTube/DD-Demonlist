@@ -1,0 +1,28 @@
+{
+    "id": 114933189,
+    "name": "Through The Decay",
+    "author": "sparktwo",
+    "creators": [],
+    "verifier": "sparktwo",
+    "verification": "https://www.youtube.com/watch?v=focX-rT5_ec",
+    "percentToQualify": "51",
+    "enjoyment": "4/10",
+    "difficulty": "Extreme Demon",
+    "description": "An extreme demon DD beat with a 120fps frame perfect swag route.",
+    "history": [
+        { 
+            "date": "2026-09-06",
+        "position": 1,
+        "change": 0,
+        "reason": "Through The Decay got placed at #12"
+        }
+    ],
+    "records": [
+        {
+            "user": "DD",
+            "link": "https://www.youtube.com/watch?v=Vu-dG037bYc",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
