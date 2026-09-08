@@ -15,6 +15,12 @@
         "position": 4,
         "change": 0,
         "reason": "MasmeCrescent got placed at #4"
+        },
+        { 
+            "date": "2026-08-30",
+        "position": 5,
+        "change": -1,
+        "reason": "gravity was placed above"
         }
     ],
     "records": [
