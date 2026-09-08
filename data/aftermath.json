@@ -21,6 +21,12 @@
         "position": 3,
         "change": -1,
         "reason": "Artificial Ascent got placed above"
+        },
+        { 
+            "date": "2026-08-30",
+        "position": 4,
+        "change": -1,
+        "reason": "gravity was placed above"
         }
     ],
     "records": [
