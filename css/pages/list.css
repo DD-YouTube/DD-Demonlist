@@ -3,9 +3,11 @@
 .page-list .meta-container {
     padding-block: 2rem;
 }
+
 .page-list .list-container {
     padding-inline: 1rem;
 }
+
 .page-list .meta-container {
     padding-right: 2rem;
 }
@@ -13,13 +15,16 @@
 .page-list .list {
     table-layout: auto;
 }
+
 .page-list .list .rank {
     text-align: end;
     padding-right: 1rem;
 }
+
 .page-list .list .level {
     width: 100%;
 }
+
 .page-list .list .level button {
     background-color: var(--color-background);
     color: var(--color-on-background);
@@ -31,19 +36,23 @@
     overflow-wrap: anywhere;
     cursor: pointer;
 }
+
 .page-list .list .level.error button {
     color: var(--color-error);
     cursor: not-allowed;
     text-decoration: line-through;
 }
+
 .page-list .list .level button:hover {
     background-color: var(--color-background-hover);
     color: var(--color-on-background-hover);
 }
+
 .page-list .list .level.active button {
     background-color: var(--color-primary);
     color: var(--color-on-primary);
 }
+
 .page-list .level-container .level {
     display: flex;
     flex-direction: column;
@@ -51,33 +60,65 @@
     padding-right: 2rem;
     max-width: 48rem;
 }
+
 .page-list .level-container .level .level-authors {
     display: grid;
     grid-template-columns: max-content 1fr;
     grid-auto-rows: max-content;
     gap: 1rem;
 }
+
 .page-list .level-container .level .video {
     aspect-ratio: 16/9;
 }
+
 .page-list .level-container .level .stats {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
     gap: 2rem;
 }
+
 .page-list .level-container .level .stats li {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
+
 .page-list .level-container .level .records {
     table-layout: fixed;
 }
+
 /* === POSITION HISTORY === */
+
 .page-list .level-container .level .history {
     margin-top: 1rem;
+}
+
+/* Toggle Header */
+.history-toggle {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.toggle-icon {
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
+/* Fade Animation */
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
 }
 
 .page-list .level-container .level .history-list {
@@ -108,24 +149,7 @@
     opacity: 0.85;
 }
 
-/* Positionsänderung */
-.page-list .level-container .level .history-list li p.change-positive {
-    color: #4caf50; /* Grün */
-    font-weight: 700;
-}
-
-.page-list .level-container .level .history-list li p.change-negative {
-    color: #f44336; /* Rot */
-    font-weight: 700;
-}
-
-
-/* Position */
-.history-position {
-    font-weight: 700;
-}
-
-
+/* Hintergrundfarbe für ganze Zeile */
 .page-list .level-container .level .history-list li.change-positive {
     background-color: rgba(76, 175, 80, 0.25); /* sanftes Grün */
     border-left: 4px solid #4caf50;
@@ -136,56 +160,70 @@
     border-left: 4px solid #f44336;
 }
 
-
+/* Position */
+.history-position {
+    font-weight: 700;
+}
 
 .page-list .level-container .level .records tr td:not(:last-child) {
     padding-right: 1rem;
 }
+
 .page-list .level-container .level .records .percent,
 .page-list .level-container .level .records .user,
 .page-list .level-container .level .records .hz {
     padding-block: 1rem;
 }
+
 .page-list .level-container .level .records .user {
     width: 100%;
 }
+
 .page-list .level-container .level .records .percent,
 .page-list .level-container .level .records .hz {
     text-align: end;
 }
+
 .page-list .meta-container .og a:hover,
 .page-list .level-container .level .records a:hover {
     text-decoration: underline;
 }
+
 .page-list .meta {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
+
 .page-list .meta .errors {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
+
 .page-list .meta .errors .error {
     padding: 1rem;
     background-color: var(--color-error);
     color: var(--color-on-error);
     border-radius: 0.5rem;
 }
+
 .page-list .meta .editors {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
 }
+
 .page-list .meta .editors li {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
+
 .page-list .meta .editors li img {
     height: 1.25rem;
 }
+
 .page-list .meta .editors li a:hover {
     text-decoration: underline;
 }
