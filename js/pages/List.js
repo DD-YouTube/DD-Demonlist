@@ -36,12 +36,16 @@ export default {
                     </tr>
                 </table>
             </div>
+
             <div class="level-container">
                 <div class="level" v-if="level">
                     <h1>{{ level.name }}</h1>
-<p class="level-description">{{ level.description || "[no description provided]" }}</p>
+                    <p class="level-description">{{ level.description || "[no description provided]" }}</p>
+
                     <LevelAuthors :author="level.author" :creators="level.creators" :verifier="level.verifier"></LevelAuthors>
+
                     <iframe class="video" id="videoframe" :src="video" frameborder="0"></iframe>
+
                     <ul class="stats">
                         <li>
                             <div class="type-title-sm">Points when completed</div>
@@ -56,60 +60,80 @@ export default {
                             <p>{{ level.enjoyment }}</p>
                         </li>
                         <li>
-    <div class="type-title-sm">Difficulty</div>
-    <p>{{ level.difficulty }}</p>
-</li>
+                            <div class="type-title-sm">Difficulty</div>
+                            <p>{{ level.difficulty }}</p>
+                        </li>
                     </ul>
-<div class="history" v-if="level.history && level.history.length">
-    <h2>Position History</h2>
-    <ul class="history-list">
-        <li v-for="entry in level.history"
-    :class="{
-        'change-positive': entry.change > 0,
-        'change-negative': entry.change < 0
-    }">
-    <span class="type-title-sm">{{ entry.date }}</span>
-    <span class="history-reason" v-if="entry.reason">{{ entry.reason }}</span>
-    <p v-if="entry.change !== 0">{{ entry.change > 0 ? '+' + entry.change : entry.change }}</p>
-    <p class="history-position">#{{ entry.position }}</p>
-</li>
-    </ul>
-</div>
 
+                    <!-- ========================= -->
+                    <!-- EIN-/AUSKLAPPBARE HISTORY -->
+                    <!-- ========================= -->
+
+                    <div class="history" v-if="level.history && level.history.length">
+                        <h2 @click="showHistory = !showHistory" class="history-toggle">
+                            Position History
+                            <span class="toggle-icon">{{ showHistory ? '▼' : '▲' }}</span>
+                        </h2>
+
+                        <transition name="fade">
+                            <ul v-show="showHistory" class="history-list">
+                                <li v-for="entry in level.history"
+                                    :class="{
+                                        'change-positive': entry.change > 0,
+                                        'change-negative': entry.change < 0
+                                    }">
+
+                                    <span class="type-title-sm">{{ entry.date }}</span>
+                                    <span class="history-reason" v-if="entry.reason">{{ entry.reason }}</span>
+
+                                    <p v-if="entry.change !== 0">
+                                        {{ entry.change > 0 ? '+' + entry.change : entry.change }}
+                                    </p>
+
+                                    <p class="history-position">#{{ entry.position }}</p>
+                                </li>
+                            </ul>
+                        </transition>
+                    </div>
+
+                    <!-- ========================= -->
+                    <!-- RECORDS -->
+                    <!-- ========================= -->
 
                     <h2>Records</h2>
                     <p v-if="selected + 1 <= 75"><strong>{{ level.percentToQualify }}%</strong> or better to qualify</p>
                     <p v-else-if="selected +1 <= 150"><strong>100%</strong> or better to qualify</p>
                     <p v-else>This level does not accept new records.</p>
+
                     <table class="records">
                         <tr v-for="record in level.records" class="record">
-                            <td class="percent">
-                                <p>{{ record.percent }}%</p>
-                            </td>
+                            <td class="percent"><p>{{ record.percent }}%</p></td>
                             <td class="user">
                                 <a :href="record.link" target="_blank" class="type-label-lg">{{ record.user }}</a>
                             </td>
                             <td class="mobile">
                                 <img v-if="record.mobile" :src="\`/assets/phone-landscape\${store.dark ? '-dark' : ''}.svg\`" alt="Mobile">
                             </td>
-                            <td class="hz">
-                                <p>{{ record.hz }}Hz</p>
-                            </td>
+                            <td class="hz"><p>{{ record.hz }}Hz</p></td>
                         </tr>
                     </table>
                 </div>
+
                 <div v-else class="level" style="height: 100%; justify-content: center; align-items: center;">
                     <p>(ノಠ益ಠ)ノ彡┻━┻</p>
                 </div>
             </div>
+
             <div class="meta-container">
                 <div class="meta">
                     <div class="errors" v-show="errors.length > 0">
                         <p class="error" v-for="error of errors">{{ error }}</p>
                     </div>
+
                     <div class="og">
                         <p class="type-label-md">Website layout made by <a href="https://tsl.pages.dev/" target="_blank">TheShittyList</a></p>
                     </div>
+
                     <template v-if="editors">
                         <h3>List Editors</h3>
                         <ol class="editors">
@@ -120,31 +144,16 @@ export default {
                             </li>
                         </ol>
                     </template>
+
                     <h3>Submission Requirements</h3>
-                    <p>
-                        Achieved the record without using hacks (however, FPS bypass is allowed, up to 360fps)
-                    </p>
-                    <p>
-                        Achieved the record on the level that is listed on the site - please check the level ID before you submit a record
-                    </p>
-                    <p>
-                        Have either source audio or clicks/taps in the video. Edited audio only does not count
-                    </p>
-                    <p>
-                        The recording must have a previous attempt and entire death animation shown before the completion, unless the completion is on the first attempt. Everyplay records are exempt from this
-                    </p>
-                    <p>
-                        The recording must also show the player hit the endwall, or the completion will be invalidated.
-                    </p>
-                    <p>
-                        Do not use secret routes or bug routes
-                    </p>
-                    <p>
-                        Do not use easy modes, only a record of the unmodified level qualifies
-                    </p>
-                    <p>
-                        Once a level falls onto the Legacy List, we accept records for it for 24 hours after it falls off, then afterwards we never accept records for said level
-                    </p>
+                    <p>Achieved the record without using hacks (however, FPS bypass is allowed, up to 360fps)</p>
+                    <p>Achieved the record on the level that is listed on the site - please check the level ID before you submit a record</p>
+                    <p>(For Extremes and Insane Demons) Have either source audio or clicks/taps in the video. Edited audio only does not count</p>
+                    <p>The recording must have a previous attempt and entire death animation shown before the completion, unless the completion is on the first attempt. Everyplay records are exempt from this</p>
+                    <p>The recording must also show the player hit the endwall, or the completion will be invalidated.</p>
+                    <p>Do not use secret routes or bug routes</p>
+                    <p>Do not use easy modes, only a record of the unmodified level qualifies</p>
+                    <p>Once a level falls onto the Legacy List, we accept records for it for 24 hours after it falls off, then afterwards we never accept records for said level</p>
                 </div>
             </div>
         </main>
@@ -156,7 +165,8 @@ export default {
         selected: 0,
         errors: [],
         roleIconMap,
-        store
+        store,
+        showHistory: true // <— NEU
     }),
     computed: {
         level() {
@@ -175,11 +185,9 @@ export default {
         },
     },
     async mounted() {
-        // Hide loading spinner
         this.list = await fetchList();
         this.editors = await fetchEditors();
 
-        // Error handling
         if (!this.list) {
             this.errors = [
                 "Failed to load list. Retry in a few minutes or notify list staff.",
@@ -188,9 +196,7 @@ export default {
             this.errors.push(
                 ...this.list
                     .filter(([_, err]) => err)
-                    .map(([_, err]) => {
-                        return `Failed to load level. (${err}.json)`;
-                    })
+                    .map(([_, err]) => `Failed to load level. (${err}.json)`)
             );
             if (!this.editors) {
                 this.errors.push("Failed to load list editors.");
