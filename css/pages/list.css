@@ -126,27 +126,20 @@
 }
 
 
-.page-list .level-container .level .history h2 {
-    font-size: 1.6em;
-    margin-bottom: 0.5rem;
+.page-list .level-container .level .history-list li p.change-positive {
+    background-color: #4caf50; /* Grün */
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
 }
 
-.page-list .level-container .level .history-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.page-list .level-container .level .history-list li p.change-negative {
+    background-color: #f44336; /* Rot */
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
 }
 
-.page-list .level-container .level .history-list li span {
-    font-weight: 600;
-    color: var(--color-on-background);
-}
-
-.page-list .level-container .level .history-list li p {
-    font-weight: 700;
-    color: var(--color-on-background);
-    margin: 0;
-}
 
 .page-list .level-container .level .records tr td:not(:last-child) {
     padding-right: 1rem;
