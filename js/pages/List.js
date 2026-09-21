@@ -166,7 +166,7 @@ export default {
         errors: [],
         roleIconMap,
         store,
-        showHistory: true // <— NEU
+        showHistory: false // <— NEU
     }),
     computed: {
         level() {
