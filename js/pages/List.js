@@ -63,27 +63,16 @@ export default {
 <div class="history" v-if="level.history && level.history.length">
     <h2>Position History</h2>
     <ul class="history-list">
-        <li v-for="entry in level.history">
-            <!-- Datum -->
-            <span class="type-title-sm">{{ entry.date }}</span>
-
-            <!-- Begründung -->
-            <span class="history-reason" v-if="entry.reason">
-                {{ entry.reason }}
-            </span>
-
-            <!-- Positionsänderung -->
-            <p v-if="entry.change !== 0" 
-               :class="{
-                   'change-positive': entry.change > 0,
-                   'change-negative': entry.change < 0
-               }">
-                {{ entry.change > 0 ? '+' + entry.change : entry.change }}
-            </p>
-
-            <!-- Position -->
-            <p class="history-position">#{{ entry.position }}</p>
-        </li>
+        <li v-for="entry in level.history"
+    :class="{
+        'change-positive': entry.change > 0,
+        'change-negative': entry.change < 0
+    }">
+    <span class="type-title-sm">{{ entry.date }}</span>
+    <span class="history-reason" v-if="entry.reason">{{ entry.reason }}</span>
+    <p v-if="entry.change !== 0">{{ entry.change > 0 ? '+' + entry.change : entry.change }}</p>
+    <p class="history-position">#{{ entry.position }}</p>
+</li>
     </ul>
 </div>
 
