@@ -5,16 +5,22 @@
     "creators": [],
     "verifier": "NirvanaBaby",
     "verification": "https://www.youtube.com/watch?v=KMd9LOO437s",
-    "percentToQualify": "62",
+    "percentToQualify": "100",
     "enjoyment": "7/10",
     "difficulty": "Insane Demon",
     "description": "Insane Demon... that's it.",
     "history": [
         { 
             "date": "2026-09-06",
-        "position": 1,
+        "position": 15,
         "change": 0,
         "reason": "Twisted Vision got placed at #15"
+        },
+        { 
+            "date": "2026-09-26",
+        "position": 16,
+        "change": -1,
+        "reason": "xo got placed above"
         }
     ],
     "records": [
