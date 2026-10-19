@@ -1,0 +1,28 @@
+{
+    "id": 108897593,
+    "name": "The Grotto",
+    "author": "greencubed",
+    "creators": ["greencubed"],
+    "verifier": "GD John Wick",
+    "verification": "https://www.youtube.com/watch?v=lE5XyrrdbKc",
+    "percentToQualify": "60",
+    "enjoyment": "7/10",
+    "difficulty": "Extreme Demon",
+    "description": "High CPS Extreme Demon with one of DD's favourite songs.",
+    "history": [
+        { 
+            "date": "2026-10-19",
+        "position": 7,
+        "change": 0,
+        "reason": "The Grotto got placed at #7"
+        }
+    ],
+    "records": [
+        {
+            "user": "DD",
+            "link": "https://youtu.be/46U9ijD7W-I",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
