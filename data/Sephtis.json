@@ -1,0 +1,46 @@
+{
+    "id": 75857309,
+    "name": "Sephtis",
+    "author": "deThe",
+    "creators": ["deThe"],
+    "verifier": "Teno",
+    "verification": "https://www.youtube.com/watch?v=7NQDv1N3I2M",
+    "percentToQualify": "63",
+    "enjoyment": "0/10",
+    "difficulty": "Extreme Demon",
+    "description": "DD's first ever KrMal demon.",
+    "history": [
+        { 
+            "date": "2026-10-19",
+        "position": 11,
+        "change": 0,
+        "reason": "Sephtis got placed at #11"
+        },
+      { 
+            "date": "2026-10-19",
+        "position": 12,
+        "change": -1,
+        "reason": "HyperSonic got placed above"
+        },
+      { 
+            "date": "2026-10-19",
+        "position": 13,
+        "change": -1,
+        "reason": "The Grotto got placed above"
+        },
+      { 
+            "date": "2026-10-19",
+        "position": 14,
+        "change": -1,
+        "reason": "Azurite got placed above"
+        }
+    ],
+    "records": [
+        {
+            "user": "DD",
+            "link": "https://youtu.be/Sv2dGS5Vsqc",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
