@@ -1,0 +1,28 @@
+{
+    "id": 35446873,
+    "name": "Kitty",
+    "author": "f3lixsram",
+    "creators": [],
+    "verifier": "f3lixsram",
+    "verification": "https://www.youtube.com/watch?v=GOoz4wYKyoI",
+    "percentToQualify": "100",
+    "enjoyment": "3/10",
+    "difficulty": "Hard Demon",
+    "description": "Name of another GDL Member.",
+    "history": [
+        { 
+            "date": "2026-10-21",
+        "position": 29,
+        "change": 0,
+        "reason": "Kitty got placed at #29"
+        }
+    ],
+    "records": [
+        {
+            "user": "DD",
+            "link": "https://youtu.be/-Rq3E8dZSkc",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
