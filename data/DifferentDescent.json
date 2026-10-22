@@ -93,6 +93,12 @@
         "position": 25,
         "change": -1,
         "reason": "Wedy Landscape got placed above"
+        },
+        { 
+            "date": "2026-08-30",
+        "position": 26,
+        "change": -1,
+        "reason": "gravity got placed above"
         }
     ],
     "records": [
