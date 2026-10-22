@@ -9,6 +9,14 @@
     "enjoyment": "100/100",
     "difficulty": "Extreme Demon",
     "description": "A Flow Extreme Demon made by BloomOcean. Very fun, DD's worst fail was 92%.",
+    "history": [
+        { 
+            "date": "2026-08-31",
+        "position": 6,
+        "change": 0,
+        "reason": "Grand Eclipse got placed at #6"
+        }
+    ]
     "records": [
         {
             "user": "DD",
