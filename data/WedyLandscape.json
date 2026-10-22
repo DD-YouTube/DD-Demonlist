@@ -15,6 +15,12 @@
         "position": 11,
         "change": 0,
         "reason": "Wedy Landscape got placed at #11"
+        },
+        { 
+            "date": "2026-08-30",
+        "position": 12,
+        "change": -1,
+        "reason": "gravity got placed above"
         }
     ],
     "records": [
